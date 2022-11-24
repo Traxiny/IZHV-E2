@@ -93,7 +93,7 @@ public class Spawner : MonoBehaviour
             spawnOffset + (1.0f - spawnSize) / 2.0f : 
             -spawnOffset - (1.0f - spawnSize) / 2.0f
         );
-        
+
         // Scale it.
         obstacle.transform.localScale = new Vector3(spawnSize, spawnSize, spawnSize);
         

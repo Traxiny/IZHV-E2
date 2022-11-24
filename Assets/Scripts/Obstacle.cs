@@ -49,7 +49,14 @@ public class Obstacle : MonoBehaviour
     /// Update called once per frame.
     /// </summary>
     void Update()
-    { }
+    {   //go faster each second
+        if (movementSpeed < 6)
+        {
+            movementSpeed += 0.5f;
+            mRB.velocity = movementDirection * movementSpeed;
+
+        }
+    }
 
     /// <summary>
     /// Event triggered when we collide with something.
