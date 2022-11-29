@@ -95,7 +95,7 @@ public class Spawner : MonoBehaviour
         );
 
         // Scale it.
-        obstacle.transform.localScale = new Vector3(spawnSize, spawnSize, spawnSize);
+        obstacle.transform.localScale = new Vector3(Random.Range(spawnSize, spawnSize + 0.5f), Random.Range(spawnSize, spawnSize + 1), spawnSize);
         
         // Move the obstacle into the correct layer.
         obstacle.layer = LayerMask.NameToLayer(spawnLayer);
